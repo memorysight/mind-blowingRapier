@@ -3,9 +3,9 @@ import {useEffect} from 'react';
 import {BufferAttribute, Color} from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
-export function Virus1(){
+export function Ship1(){
 
-    const gltf = useLoader(GLTFLoader, process.env.PUBLIC_URL + "models/virus1.glb");
+    const gltf = useLoader(GLTFLoader, process.env.PUBLIC_URL + "models/ship1.glb");
 
     useEffect(()=>{
         if(gltf) return;
