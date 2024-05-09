@@ -8,7 +8,7 @@ import {Virus1} from './Virus1';
 import {Doctor1} from './Doctor1';
 import {Ship1} from './Ship1';
 
-// import  {MotionShape}  from "./MotionShape";
+
 
 
 export function SceneContainer() {
@@ -29,8 +29,8 @@ export function SceneContainer() {
        <Doctor1 />
         <Ship1 />
 
-{/* 
-        <MotionShape /> */}
+
+     
 
     </Suspense>
   );
