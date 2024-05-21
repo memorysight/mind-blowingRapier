@@ -5,7 +5,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export function Virus1(){
 
-    const gltf = useLoader(GLTFLoader, process.env.PUBLIC_URL + "models/virus1.glb");
+    const gltf = useLoader(GLTFLoader, process.env.PUBLIC_URL + "models/ultraSexy.glb");
 
     useEffect(()=>{
         if(gltf) return;
@@ -14,10 +14,13 @@ export function Virus1(){
         var uvs = mesh.geometry.attribute.uv.array;
         mesh.geometry.setAttribute('uv2', new BufferAttribute(uvs, 2));
 
+        
         mesh.material.lightMap = mesh.material.map;
         mesh.material.lightMapIntensity = 400;
         mesh.material.color = new Color(0.04, 0.06, 0.1);
     }, [gltf]);
+
+
 
     return(
 

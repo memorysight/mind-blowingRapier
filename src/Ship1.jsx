@@ -11,12 +11,13 @@ export function Ship1(){
         if(gltf) return;
 
         let mesh = gltf.scene.childeren[0];
-        var uvs = mesh.geometry.attribute.uv.array;
-        mesh.geometry.setAttribute('uv2', new BufferAttribute(uvs, 2));
+        // var uvs = mesh.geometry.attribute.uv.array;
+        // mesh.geometry.setAttribute('uv2', new BufferAttribute(uvs, 2));
 
-        mesh.material.lightMap = mesh.material.map;
-        mesh.material.lightMapIntensity = 400;
-        mesh.material.color = new Color(0.04, 0.06, 0.1);
+        mesh.scale.set(0.1, 0.1, 0.1)
+        // mesh.material.lightMap = mesh.material.map;
+        // mesh.material.lightMapIntensity = 400;
+        // mesh.material.color = new Color(0.04, 0.06, 0.1);
     }, [gltf]);
 
     return(

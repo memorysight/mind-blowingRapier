@@ -12,6 +12,8 @@ import {Ship1} from './Ship1';
 
 
 export function SceneContainer() {
+
+  
   return (
     <Suspense fallback={null}>
       <Environment background={"only"} files={process.env.PUBLIC_URL + "/textures/bg.hdr"} />
@@ -22,12 +24,12 @@ export function SceneContainer() {
 
 
         {/* <FloatingIsland /> */}
-        <Virus2 />
+        {/* <Virus2 /> */}
        
        <Virus1 />
 
-       <Doctor1 />
-        <Ship1 />
+       {/* <Doctor1 />
+        <Ship1 /> */}
 
 
      
