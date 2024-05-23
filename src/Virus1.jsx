@@ -1,12 +1,41 @@
-import {useLoader} from '@react-three/fiber';
+import {useLoader, useFrame} from '@react-three/fiber';
 import {useEffect} from 'react';
 import {BufferAttribute, Color} from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { useAnimations } from '@react-three/drei';
+import { AnimationMixer } from 'three';
 
 export function Virus1(){
 
-    const gltf = useLoader(GLTFLoader, process.env.PUBLIC_URL + "models/ultraSexy.glb");
+    const gltf = useLoader(GLTFLoader, process.env.PUBLIC_URL + "models/jennxxxDancing.glb");
+    // const{actions} = useAnimations(gltf.animations, gltf.scene);
 
+    // useEffect(()=>{
+    //     actions.play();
+    // }, [])
+
+
+    let mixer = null;
+    useEffect(() => {
+        const model = gltf.scene;
+        const animations = gltf.animations;
+    
+        if (model && animations && mixer === null) {
+          mixer = new AnimationMixer(model);
+    
+          const action = mixer.clipAction(animations[0]);
+          action.play();
+ 
+        }
+    }, [gltf]);
+
+    useFrame((_, delta) => {
+        if (mixer) {
+          mixer.update(delta);
+        }
+      });
+
+    console.log(gltf);
     useEffect(()=>{
         if(gltf) return;
 
