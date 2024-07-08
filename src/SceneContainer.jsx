@@ -7,6 +7,7 @@ import {Virus2} from './Virus2';
 import {Virus1} from './Virus1';
 import {Doctor1} from './Doctor1';
 import {Ship1} from './Ship1';
+import { RoboticHead } from "./RoboticHead";
 
 
 
@@ -27,6 +28,7 @@ export function SceneContainer() {
         {/* <Virus2 /> */}
        
        <Virus1 />
+       <RoboticHead />
 
        {/* <Doctor1 />
         <Ship1 /> */}
