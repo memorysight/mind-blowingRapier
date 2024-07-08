@@ -53,7 +53,6 @@ export function Virus1(){
 
     return(
 
-
        
         <primitive object={gltf.scene}/>
 
