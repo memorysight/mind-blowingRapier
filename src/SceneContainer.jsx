@@ -27,7 +27,7 @@ export function SceneContainer() {
         {/* <FloatingIsland /> */}
         {/* <Virus2 /> */}
        
-       <Virus1 />
+       {/* <Virus1 /> */}
        <RoboticHead />
 
        {/* <Doctor1 />
