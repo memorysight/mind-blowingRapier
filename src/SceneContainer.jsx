@@ -28,7 +28,7 @@ export function SceneContainer() {
         {/* <Virus2 /> */}
        
        <Virus1 />
-       <RoboticHead />
+       {/* <RoboticHead /> */}
 
        {/* <Doctor1 />
         <Ship1 /> */}
