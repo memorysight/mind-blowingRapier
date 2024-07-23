@@ -7,7 +7,7 @@ import { AnimationMixer } from 'three';
 
 export function Virus1(){
 
-    const gltf = useLoader(GLTFLoader, process.env.PUBLIC_URL + "models/jenxxxNormal.glb");
+    const gltf = useLoader(GLTFLoader, process.env.PUBLIC_URL + "models/jenxxxStanding.glb");
     // const{actions} = useAnimations(gltf.animations, gltf.scene);
 
     // useEffect(()=>{
